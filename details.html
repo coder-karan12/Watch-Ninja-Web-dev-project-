@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #1B3C53;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login{
+            background: rgb(255, 255, 255);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 10px 0px 200px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #000000;
+        }
+
+        label{
+            font-size: 16px;
+        }
+
+        .radio-box{
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="login">
+
+        <form action="login.php">
+
+            <input type="text" name="Name" placeholder="Enter Your Name">
+            <input type="number" name="Mobile" placeholder="Mobile No.">
+            <input type="text" name="Address" placeholder="Address">
+            <input type="text" name="City" placeholder="City">
+            <input type="text" name="State" placeholder="State">
+            <input type="text" name="Landmark" placeholder="Landmark">
+
+            <div class="radio-box">
+                <input type="radio" name="payment" value="UPI">
+                <label>UPI</label><br>
+
+                <input type="radio" name="payment" value="NetBanking">
+                <label>Net Banking</label><br>
+
+                <input type="radio" name="payment" value="COD">
+                <label>Cash on Delivery</label><br>
+            </div>
+            <div class="submit">
+                <a href="order placed.html">
+                    <input type="button" value="Submit">
+                </a>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
